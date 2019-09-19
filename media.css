@@ -1,0 +1,64 @@
+@media screen and (max-width:400px){
+    img{
+        display: none;
+    }
+    .mail{
+        display: none;
+    }
+
+    .principale{
+        flex-direction: column;
+    }
+
+    .entete{
+        flex-direction: row ;
+        width: 100%;
+    }
+
+    img{
+        width: 10%;
+    }
+
+    .gauche{
+        width: 100%;
+    }
+    
+    .droite{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:875px) and (max-width:1070px){
+    .mail{
+        display: none;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:874px){
+    .mail{
+        display: none;
+    }
+
+    .principale{
+        flex-direction: column;
+    }
+
+    .entete{
+        flex-direction: row ;
+        width: 100%;
+    }
+
+    img{
+        width: 10%;
+    }
+
+    .gauche{
+        width: 100%;
+    }
+    
+    .droite{
+        width: 100%;
+    }
+
+}
