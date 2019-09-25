@@ -1,76 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.principale{
-    display: flex;
-    flex-direction: row;
-}
-
-.gauche{
-    background: rgb(156, 146, 146);
-    border-radius: 10px;
-    width: 20%;
-}
-
-.droite{
-    background: rgb(156, 146, 146);
-    border-radius: 10px;
-    width: 80%;
-}
-
-.entete{
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px 15px 5px 5px;
-    float: inherit;
-}
-
 img{
-    width: 100%;
-    border-radius: 5px;
-    margin: 5px; 
+    width: 15px;
 }
 
-h2{
-    text-decoration: underline;
-    text-align: center;
-    background: rgb(216, 208, 208);
-    border-radius: 10px 10px 0px 0px;
-    margin: 5px;
-    padding: 5px;
+.card-img-top{
+    width: 100px;
 }
 
-span{
-    font-family: sans-serif;
-    text-transform: none;
+img:hover{
+    transform: scale(0.95);
+
 }
 
-.soustitre{
-    background: rgb(216, 208, 208);
-    margin: 5px 5px 0px 5px;
-    padding: 5px;
-}
-.contenu{
-    background: rgb(226, 224, 224);
-    margin: 5px 5px 5px 5px;
-    padding: 5px;
-    border-radius: 10px;
+.collapse{
+    transform: scale(0.95);
 }
 
-li{
-    margin: 0px 0px 0px 25px;
+.card-img-top{
+    /* animation-duration: 3s; */
+    transform-origin: 10px 10px;
+    /* animation-name: slidein; */
 }
 
-.contenu2{
-    background: rgb(226, 224, 224);
-    margin: 0px 5px 5px 5px;
-    padding: 5px;
-    border-radius: 0px 0px 10px 10px;
+@keyframes slidein {
+    from {
+      /* margin-left: 100%; */
+      display: none;
+    }
+  
+    to {
+      /* margin-left: 0%; */
+      /* width: 100%; */
+      display: contents;
+    }
+  }
+
+h4{
+    color: rgb(0, 153, 255);
+}
+
+.identite{
+    border-radius: 25% 10%;
+    width: 75%;
+    animation-duration: 10s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+  
+    50%{
+        margin-left: 0%;
+        opacity: 0.4
+    }
+
+    75%{
+        opacity: 0.8
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.contact{
+    animation-duration: 6s;
+    animation-name: slidein3;
+}
+
+@keyframes slidein3 {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+}
+
+.carousel{
+    width: 100px;
+}
+
+.d-block{
+    width: 30px;
 }
