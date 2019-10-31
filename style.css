@@ -1,5 +1,34 @@
 .jumbotron{
     padding: 2%; 
+    background: rgb(150, 148, 148);
+}
+
+/* Animation neige */
+.snow {
+    animation: wind 5s linear infinite alternate;
+}
+
+.snow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    right: -100px;
+    height: 2000px;
+    background: url(images/snow-light.png);
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall{
+    0% {
+        transform: translateY(-1000px)
+    }
+}
+
+@keyframes wind {
+    to {
+        transform: translateX(50px);
+    }
 }
 
 img{
