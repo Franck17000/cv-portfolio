@@ -3,6 +3,10 @@
     background: rgb(150, 148, 148);
 }
 
+.noprint {
+        display: none;
+}
+
 /* Animation neige */
 .snow {
     animation: wind 5s linear infinite alternate;
@@ -95,3 +99,4 @@ h1:hover, h2:hover, h4:hover{
     transition: 0.4s ease-in-out;
 
 }
+
